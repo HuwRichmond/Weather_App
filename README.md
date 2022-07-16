@@ -5,7 +5,7 @@ The server-side API used to get response data object is retrieved from the Open 
 The current weather section includes the details listed below:.
 
 - City, Date, Icon-image
-- Temperature
+- Temperature (displayed in fahrenheit)
 - Humidity
 - Wind Speed
 - UV index
@@ -14,7 +14,7 @@ The 5-day forecast also displays weather conditions for the next 5 days. Weather
 
 - Date
 - Icon image
-- Temperature
+- Temperature (displayed in fahrenheit)
 - Humidity
 
 The local storage is used to store the previous search city and display them to the user in the left side of the page under the list group. The user can also clear the search history by clicking the clear history button.

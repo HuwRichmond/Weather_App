@@ -1,5 +1,5 @@
 
-//Declare a variable to store the searched city
+//variable to store the searched city
 var city="";
 // variable declaration
 var searchCity = $("#search-city");
@@ -22,7 +22,7 @@ function find(c){
 }
 //Set up the API key
 var APIKey="a0aca8a89948154a4182dcecc780b513";
-// Display the curent and future weather to the user after grabing the city form the input text box.
+// Display the curent and future weather to the user after city name is typed in text box.
 function displayWeather(event){
     event.preventDefault();
     if(searchCity.val().trim()!==""){
@@ -30,9 +30,9 @@ function displayWeather(event){
         currentWeather(city);
     }
 }
-// Here we create the AJAX call
+// AJAX call named currentWeather function
 function currentWeather(city){
-    // Here we build the URL so we can get a data from server side.
+    // URL to get a data from server side.
     var queryURL= "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=" + APIKey;
     $.ajax({
         url:queryURL,

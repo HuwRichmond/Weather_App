@@ -12,24 +12,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--Jumbotron for Title-->
+    <!--Jumbotron to display the Title-->
     <div class="jumbotron container-fluid mt-2 text-center p-2" style="background-color:#404040 ;color: white;">
         <h1> <strong>Weather Forecast</strong></h1>
     </div>
     <div class="container">
-        <!--Row for searching a city-->
+        <!--search by city-->
         <div class="row">
             <div class="col-sm-4 bg-light">
-                <!--Here we create an HTML form for handling the inputs-->
+                <!--HTML form for handling the inputs-->
                 <h4 class="pt-1"><strong>Search by City:</strong></h4>
-                <!--Here we create the text box for capturing the search city Name-->
+                <!--text box to search by city Name-->
                 <div class="input-group mb-3">
                     <input type="text" class="form-control"id="search-city" aria-label="City Search" aria-describedby="search-button">
                     <div class="input-group-append">
                         <button class=" btn bg-primary text-light" id="search-button"><i class="fa fa-search"></i></button>
                     </div>
                 </div>
-                <!--section for search city history-->
+                <!--section to display search city history-->
                 <button class=" btn btn-primary" type="button" id="clear-history">Clear search</button>
                 <ul class="list-group">
 
@@ -45,7 +45,7 @@
                         <p>UV index:<span class="current bg-danger rounded py-2 px-2 text-white" id="uv-index"></span></p> 
                     </div>
                 </div>
-                <!--Row for future data to be dumped here-->
+                <!--Row for future data to be displayed here-->
                 <div class="col-sm-12" id ="future-weather">
                     <h3>5-Day Forecast:</h3>
                     <div class="row text-light">
